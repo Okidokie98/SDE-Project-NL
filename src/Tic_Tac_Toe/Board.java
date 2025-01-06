@@ -85,8 +85,4 @@ public class Board {
         }
         return false;
     }
-
-    public void undoMove(int x, int y) {
-        cells[x][y].setSymbol(' ');
-    }
 }

@@ -16,9 +16,4 @@ public class MakeMoveCommand implements Command {
     public void execute() {
         board.makeMove(x, y, symbol);
     }
-
-    @Override
-    public void undo() {
-        board.undoMove(x, y);
-    }
 }

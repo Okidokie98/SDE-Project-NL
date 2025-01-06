@@ -9,10 +9,4 @@ public class GameController {
         command.execute();
         commandHistory.push(command);
     }
-
-    public void undoLastCommand() {
-        if (!commandHistory.isEmpty()) {
-            commandHistory.pop().undo();
-        }
-    }
 }
