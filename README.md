@@ -4,7 +4,7 @@
 - Dirk van Dijke ([dijk0166@hz.nl](dijk0166@hz.nl) - 00096502)
 
 ## Gebruik van de app
-Om de app te starten ga je naar de Main.java class en klik je op het groene pijltje.
+Om de app te starten ga je naar de TicTacToe.java class en klik je op het groene pijltje.
 De console zal dan worden opgestart.
 
 De speler wordt gevraagd om een rij en een kolom toe te voegen, de locaties van elke plek staan hieronder weergegeven.

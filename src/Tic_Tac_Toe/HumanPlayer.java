@@ -17,11 +17,11 @@ public class HumanPlayer implements Player {
 
     @Override
     public void makeMove(Board board) {
-        System.out.println("Enter your move (row and column): ");
+        System.out.println("Vul je rij (®️) en kolom (©️) in: ");
         int x = scanner.nextInt();
         int y = scanner.nextInt();
         if (!board.makeMove(x, y, symbol)) {
-            System.out.println("Invalid move. Try again.");
+            System.out.println("Foute zet. Probeer opnieuw. 🔁");
             makeMove(board);
         }
     }
