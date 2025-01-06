@@ -1,9 +1,18 @@
 # SDE-Project-NL
-Ons project gaat over ...
+## Gebruik van de app
+Om de app te starten ga je naar de Main.java class en klik je op het groene pijltje.
+De console zal dan worden opgestart.
+
+## Over onze app
+Met ons project gaan wij een console versie van tic-tac-toe maken.
+
+In het plaatje zie je een voorbeeld van hoe wij een bepaalde positie zouden kunnen aanroepen
+en hoe het bord er uit zou kunnen komen te zien.
+![img_1.png](img_1.png)
 
 ## Authors
 - Brandon de Baat ([baat0004@hz.nl](baat0004@hz.nl) - 00073578)
-- Dirk van Dijke ([baat0004@hz.nl](baat0004@hz.nl) - ...)
+- Dirk van Dijke ([dijk0166@hz.nl](dijk0166@hz.nl) - ...)
 
 ## Design Patterns
 Dit project bevat meerdere 'design patterns', er zitten minimaal 3 verschillende types in:
@@ -12,13 +21,28 @@ Dit project bevat meerdere 'design patterns', er zitten minimaal 3 verschillende
 3. Behavioural patterns
 
 ### Creational patterns
-### Structural patterns
-### Behavioural patterns
-Ons project bevat een "[Template Method](https://refactoring.guru/design-patterns/template-method)".
-Dit houdt in dat er één vaste (abstract) class is die aangeeft welke functies er uitgevoerd moeten worden, de sub-classes moeten gebruik maken van de in de template-class benoemde functies.
-Het is ook mogelijk dat de template-class al een standaard soort functie heeft, de sub-class hoeft deze dan niet per se te "overriden".
+Als creational pattern zal onze app de [Factory Method](https://refactoring.guru/design-patterns/factory-method) gebruiken.
+Deze wordt gebruikt om de spelers te bouwen, wij willen als standaard 2 spelers gebruiken,
+maar door dit design patroon kunnen we in de toekomst meerdere spelers toevoegen.
 
-In ons geval doet het het volgende:
+Een speler heeft:
+- Icoon ("O" of "X")
+- Naam (sting)
+- Score (int)
+
+### Structural patterns
+Als structural pattern zal onze app de [Composite](https://refactoring.guru/design-patterns/composite) methode gebruiken.
+Deze wordt gebruikt om het bord te genereren.
+
+In ons geval doet het volgende:
+...
+
+### Behavioural patterns
+Als behavioural pattern zal onze app de [Command](https://refactoring.guru/design-patterns/command) methode gebruiken.
+
+
+
+In ons geval doet het volgende:
 ...
 
 ## Grading Form
