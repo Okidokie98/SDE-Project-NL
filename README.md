@@ -8,7 +8,6 @@ Met ons project gaan wij een console versie van tic-tac-toe maken.
 
 In het plaatje zie je een voorbeeld van hoe wij een bepaalde positie zouden kunnen aanroepen
 en hoe het bord er uit zou kunnen komen te zien.
-![img_1.png](img_1.png)
 
 ## Authors
 - Brandon de Baat ([baat0004@hz.nl](baat0004@hz.nl) - 00073578)
