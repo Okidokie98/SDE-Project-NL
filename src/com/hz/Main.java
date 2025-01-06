@@ -22,7 +22,7 @@ public class Main {
         // IF WE HAVE TO ADD AN OTHER TYPE OF CARD...
         // ...I QUIT THIS JOB.
 //        AbstractCard card = new AbstractCard(printer, false, true);
-AbstractCard christmas = new ChristmasCard(printer);
-        christmas.print();
+AbstractCard card = new HighSchoolCard(printer);
+        card.print();
     }
 }
