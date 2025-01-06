@@ -20,13 +20,13 @@ public class TicTacToe {
             String status = board.checkGameStatus(player1.getSymbol());
             if (status.equals("win")) {
                 board.render();
-                System.out.println("Player '" + player1.getSymbol() + "' wins!");
+                System.out.println("Speler '" + player1.getSymbol() + "' wint!");
                 System.out.println("Jij bent echt goed! 🤯");
                 gameRunning = false;
                 continue;
             } else if (status.equals("draw")) {
                 board.render();
-                System.out.println("It's a draw!");
+                System.out.println("Het is gelijkspel!");
                 gameRunning = false;
                 continue;
             }
@@ -38,12 +38,13 @@ public class TicTacToe {
             status = board.checkGameStatus(player2.getSymbol());
             if (status.equals("win")) {
                 board.render();
-                System.out.println("Player '" + player2.getSymbol() + "' wins!");
+                System.out.println("Speler '" + player2.getSymbol() + "' wint!");
                 System.out.println("Volgende keer beter! 😎");
                 gameRunning = false;
             } else if (status.equals("draw")) {
                 board.render();
-                System.out.println("It's a draw!");
+                System.out.println("Het is gelijkspel!");
+                System.out.println("Tot het volgende spel!");
                 gameRunning = false;
             }
         }
