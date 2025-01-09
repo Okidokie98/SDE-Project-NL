@@ -31,7 +31,8 @@ Dit project bevat meerdere 'design patterns', er zitten minimaal 3 verschillende
 1. Creational patterns
 2. Structural patterns
 3. Behavioural patterns
-
+   
+<small>(Klik op de dropdown's om meer informatie te zien)</small>
 ### Creational patterns
 <details>
 <summary>Factory Method</summary>
@@ -74,6 +75,9 @@ classen.
 
 
 ### Structural patterns
+<details>
+<summary>Composite</summary>
+  
 Als structural pattern zal onze app de [Composite](https://refactoring.guru/design-patterns/composite) methode gebruiken.
 
 Dit patroon is te vinden in:
@@ -92,7 +96,11 @@ Je zou het bord kunnen zien als één object met verschillende cellen er in.
 Hierdoor zou je meerdere verschillende borden kunnen maken, in de toekomst zou je dan een 3D Tic-Tac-Toe kunnen maken
 waarbij elke winst in een apart bord je een symbool oplevert op het Groote bord (die bestaat uit 9 kleine borden).
 
+</details>
+
 ### Behavioural patterns
+<details>
+<summary>Command</summary>
 Als behavioural pattern zal onze app de [Command](https://refactoring.guru/design-patterns/command) methode gebruiken.
 
 Dit patroon is te vinden in:
@@ -104,6 +112,8 @@ heeft aangegeven. Deze zal het commando "MakeMove" aansturen en dit commando toe
 Hierin staat een lijst met alle gemaakte moves, hierdoor wordt er een overzicht gehouden van alle zetten.
 
 In de toekomst zouden we dan eventueel een "oplsaan" functie kunnen toevoegen omdat de historie van het spel is onthouden.
+
+</details>
 
 ## Grading Form
 ![img.png](img.png)
