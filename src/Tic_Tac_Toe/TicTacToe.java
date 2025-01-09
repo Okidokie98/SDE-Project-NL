@@ -1,7 +1,14 @@
 package Tic_Tac_Toe;
 
+import java.util.Scanner;
+
 public class TicTacToe {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean gameRunning = true;
+
+        ScoreTracker scoreTracker = ScoreTracker.getInstance();
+
         Board board = new Board(3);
         PlayerFactory humanFactory = PlayerFactory.getFactory(true);
         PlayerFactory aiFactory = PlayerFactory.getFactory(false);
@@ -11,7 +18,6 @@ public class TicTacToe {
 
         GameController controller = new GameController();
 
-        boolean gameRunning = true;
 
         while (gameRunning) {
             player1.makeMove(board);
@@ -19,15 +25,31 @@ public class TicTacToe {
 
             String status = board.checkGameStatus(player1.getSymbol());
             if (status.equals("win")) {
+                scoreTracker.increasePlayerScore();
                 board.render();
                 System.out.println("Speler '" + player1.getSymbol() + "' wint!");
                 System.out.println("Jij bent echt goed! 🤯");
-                gameRunning = false;
+                System.out.println(scoreTracker.getScores());
+
+                System.out.print("Wil je nog een keer spelen? (Y/N): ");
+                String input = scanner.nextLine().trim().toUpperCase();
+                if (input.equals("N")) {
+                    gameRunning = false; // Stop de loop
+                    System.out.println("Bedankt voor het spelen!");
+                }
+                board = new Board(3); // Reset the board
                 continue;
             } else if (status.equals("draw")) {
                 board.render();
                 System.out.println("Het is gelijkspel!");
-                gameRunning = false;
+                System.out.println(scoreTracker.getScores());
+                System.out.print("Wil je nog een keer spelen? (Y/N): ");
+                String input = scanner.nextLine().trim().toUpperCase();
+                if (input.equals("N")) {
+                    gameRunning = false; // Stop de loop
+                    System.out.println("Bedankt voor het spelen!");
+                }
+                board = new Board(3); // Reset the board
                 continue;
             }
 
@@ -37,14 +59,31 @@ public class TicTacToe {
 
             status = board.checkGameStatus(player2.getSymbol());
             if (status.equals("win")) {
+                scoreTracker.increaseAIScore();
                 board.render();
                 System.out.println("Speler '" + player2.getSymbol() + "' wint!");
                 System.out.println("Volgende keer beter! 😎");
+                System.out.println(scoreTracker.getScores());
+                System.out.print("Wil je nog een keer spelen? (Y/N): ");
+                String input = scanner.nextLine().trim().toUpperCase();
+                if (input.equals("N")) {
+                    gameRunning = false; // Stop de loop
+                    System.out.println("Bedankt voor het spelen!");
+                }
+                board = new Board(3); // Reset the board
                 gameRunning = false;
             } else if (status.equals("draw")) {
                 board.render();
                 System.out.println("Het is gelijkspel!");
                 System.out.println("Tot het volgende spel!");
+                System.out.println(scoreTracker.getScores());
+                System.out.print("Wil je nog een keer spelen? (Y/N): ");
+                String input = scanner.nextLine().trim().toUpperCase();
+                if (input.equals("N")) {
+                    gameRunning = false; // Stop de loop
+                    System.out.println("Bedankt voor het spelen!");
+                }
+                board = new Board(3); // Reset the board
                 gameRunning = false;
             }
         }

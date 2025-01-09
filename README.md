@@ -33,6 +33,9 @@ Dit project bevat meerdere 'design patterns', er zitten minimaal 3 verschillende
 3. Behavioural patterns
 
 ### Creational patterns
+<details>
+<summary>Factory Method</summary>
+
 Dit patroon is te vinden in:
 - Player
   - AIPlayer
@@ -51,6 +54,15 @@ Een speler heeft een icoon, dit kan een kruisje ("X") of een cirkel ("O") zijn.
 Het patroon werkt met een interface genaamd "Player" met een getSymbol en een MakeMove functie.
 Hieronder zijn twee factories verbonden, de Player Factory en de AI Factory. Deze hebben dezelfde functies als de interface,
 maar kunnen elk de function overriden.
+</details>
+
+<details>
+<summary>Singleton</summary>
+Dit patroon is te vinden in:
+- ScoreTracker
+
+Deze class wordt gebruikt om de score van een spel bij te houden
+</details>
 
 
 ### Structural patterns
