@@ -61,7 +61,15 @@ maar kunnen elk de function overriden.
 Dit patroon is te vinden in:
 - ScoreTracker
 
-Deze class wordt gebruikt om de score van een spel bij te houden
+Deze class wordt gebruikt om de score van een spel bij te houden.
+Hierdoor kan je meerdere spellen spelen en de score bijhouden.
+
+Bij het starten van de code wordt éénmalig dit scoreboard aangeroepen, je kan oneindig
+blijven spelen totdat je stopt. Bij het opnieuw opstarten van de code zal het scoreboard
+weer op 0 staan.
+
+Dit design pattern is handig omdat je maar één ding aanroept, het is niet afhankelijk van andere
+classen.
 </details>
 
 
